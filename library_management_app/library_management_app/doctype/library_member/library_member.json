@@ -1,45 +1,59 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:name1",
- "creation": "2025-12-16 20:57:04.895015",
+ "creation": "2025-12-18 01:08:13.273684",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "email",
+  "section_break_vtw4",
+  "first_name",
+  "last_name",
+  "full_name",
+  "email_address",
   "phone"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
-   "reqd": 1,
-   "unique": 1
+   "fieldname": "section_break_vtw4",
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "email",
+   "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Email",
+   "label": "First Name",
    "reqd": 1
   },
   {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
    "fieldname": "phone",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Phone"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-17 00:32:12.351454",
+ "modified": "2025-12-18 01:23:01.419188",
  "modified_by": "Administrator",
  "module": "library management app",
- "name": "Librarian",
- "naming_rule": "By fieldname",
+ "name": "Library Member",
  "owner": "Administrator",
  "permissions": [
   {
@@ -55,9 +69,11 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

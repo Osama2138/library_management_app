@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class Librarian(Document):
+class LibraryTransaction(Document):
 	pass
