@@ -12,7 +12,7 @@ class LibraryMembership(Document):
      exists = frappe.db.exists(
 		 "Library Membership", {
 			 "library_member": self.library_member,
-             "docstatus": DocStatus.SUBMITTED,
+             "docstatus": DocStatus.submitted(),
              "to_date":(">", self.from_date),
 		 },
 	 ) 
