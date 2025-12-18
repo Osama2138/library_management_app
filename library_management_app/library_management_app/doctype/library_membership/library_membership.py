@@ -17,4 +17,7 @@ class LibraryMembership(Document):
 		 },
 	 ) 
      if exists:
-         frappe.throw("This membership already exists")  
+         frappe.throw("This membership already exists") 
+         
+     loan_period = frappe.get_single_value("Library Settings", loan_period) 
+     self.to_date = frappe.utils.add_days("self.from_day", loan_period)
