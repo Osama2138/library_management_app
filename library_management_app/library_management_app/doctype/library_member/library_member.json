@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "Memeber.####",
  "creation": "2025-12-18 01:08:13.273684",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -50,10 +51,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-18 01:23:01.419188",
+ "modified": "2025-12-23 19:04:10.280464",
  "modified_by": "Administrator",
  "module": "library management app",
  "name": "Library Member",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
